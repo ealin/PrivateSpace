@@ -3,6 +3,9 @@
 #include "stack.h"
 #include <stdio.h>
 
+// new comment form PC
+
+
 /*******************************************
 	Method :stack_init
 *******************************************/
