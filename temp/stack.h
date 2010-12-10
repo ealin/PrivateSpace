@@ -1,3 +1,6 @@
+// comment:
+//
+
 #ifndef STACK_HHHH
 #define STACK_HHHH
 
