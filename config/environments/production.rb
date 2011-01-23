@@ -46,4 +46,20 @@ TestPrj::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  
+ 
+  
+  ActionMailer::Base.smtp_settings = {  
+    :address => "smtp.gmail.com",  
+    :port => 587,  
+    :domain => "my-private-space.com",  
+    :authentication => :plain,  
+    :user_name => "ealin.chiu@gmail.com",  
+    :password => "uclinux_nana"  
+  }   
+
+ SITE_URL  = "http://www.my-private-space.com"
+
+ 
 end

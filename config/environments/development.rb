@@ -22,5 +22,21 @@ TestPrj::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+  
+  
+ 
+  ActionMailer::Base.smtp_settings = {  
+    :address => "smtp.gmail.com",  
+    :port => 587,  
+    :domain => "my-private-space.com",  
+    :authentication => :plain,  
+    :user_name => "ealin.chiu@gmail.com",  
+    :password => "uclinux_nana"  
+  }    
+
+
+
+  SITE_URL  = "http://localhost:3000"
+  
 end
 
