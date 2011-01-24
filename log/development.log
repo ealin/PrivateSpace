@@ -1044,3 +1044,15 @@ Migrating to AddResetCodeToUser (20110123065159)
   [1m[35mSQL (0.1ms)[0m  SELECT version FROM "schema_migrations"
   [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20110123065159')[0m
   [1m[35mSQL (2.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20110123051903')
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 24 14:49:02 +0800 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 24 14:49:33 +0800 2011
+  Processing by UsersController#index as HTML
+Rendered users/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
