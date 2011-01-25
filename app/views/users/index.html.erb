@@ -9,7 +9,11 @@
   <%= csrf_meta_tag %>
 </head>
 
+
+<h1> <%=t :hello %></h1>
+
 <h1> My Private Spaces </h1>
+
 
 <div class="user">  
   <%= link_to "Signup", :signup unless logged_in? %>  
@@ -21,6 +25,7 @@
 
 
 <body style="background: #EEEEEE;">
+
 
 <%= yield %>
 

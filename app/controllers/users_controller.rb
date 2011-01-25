@@ -78,7 +78,7 @@ end
 
 
 def index
-
+  #I18n.locale = :en
 end
 
 end

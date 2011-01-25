@@ -1056,3 +1056,490 @@ Started GET "/" for 127.0.0.1 at Mon Jan 24 14:49:33 +0800 2011
   Processing by UsersController#index as HTML
 Rendered users/index.html.erb within layouts/application (5.1ms)
 Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at Wed Jan 26 00:42:33 +0800 2011
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 00:49:07 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:06:03 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (108.0ms)
+Completed   in 118ms
+
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for #<String:0x1036c6700>):
+    13: <h1> My Private Spaces </h1>
+    14: ->
+    15: 
+    16: <h1> <%=t :MyPrivateSpace %></h1>
+    17: 
+    18: <div class="user">  
+    19:   <%= link_to "Signup", :signup unless logged_in? %>  
+  app/views/users/index.html.erb:16:in `_app_views_users_index_html_erb__1919393160_2176695360_0'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:10:45 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (14.5ms)
+Completed   in 25ms
+
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "hello:\t\t\tHello world MyPrivateSpace:\tMy Private Space":String):
+    13: <h1> My Private Spaces </h1>
+    14: ->
+    15: 
+    16: <h1> <%=t :MyPrivateSpace %></h1>
+    17: 
+    18: <div class="user">  
+    19:   <%= link_to "Signup", :signup unless logged_in? %>  
+  app/views/users/index.html.erb:16:in `_app_views_users_index_html_erb__1919393160_2176695360_0'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:12:03 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (14.9ms)
+Completed   in 25ms
+
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for #<String:0x1036c6700>):
+    13: <h1> My Private Spaces </h1>
+    14: ->
+    15: 
+    16: <h1> <%=t :MyPrivateSpace %></h1>
+    17: 
+    18: <div class="user">  
+    19:   <%= link_to "Signup", :signup unless logged_in? %>  
+  app/views/users/index.html.erb:16:in `_app_views_users_index_html_erb__1919393160_2176695360_0'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.2ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at Wed Jan 26 01:12:35 +0800 2011
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:13:25 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (5.3ms)
+Completed   in 15ms
+
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for #<String:0x10302dc90>):
+    13: <h1> My Private Spaces </h1>
+    14: ->
+    15: 
+    16: <h1> <%=t :hello %></h1>
+    17: 
+    18: <div class="user">  
+    19:   <%= link_to "Signup", :signup unless logged_in? %>  
+  app/views/users/index.html.erb:16:in `_app_views_users_index_html_erb__1919393160_2172831880_0'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:14:13 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (14.7ms)
+Completed   in 25ms
+
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for #<String:0x1036c6700>):
+    13: <h1> My Private Spaces </h1>
+    14: ->
+    15: 
+    16: <h1> <%=t :hello %></h1>
+    17: 
+    18: <div class="user">  
+    19:   <%= link_to "Signup", :signup unless logged_in? %>  
+  app/views/users/index.html.erb:16:in `_app_views_users_index_html_erb__1919393160_2176695360_0'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:15:42 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (14.7ms)
+Completed   in 25ms
+
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for #<String:0x1036c6700>):
+    13: <h1> My Private Spaces </h1>
+    14: ->
+    15: 
+    16: <h1> <%=t :hello %></h1>
+    17: 
+    18: <div class="user">  
+    19:   <%= link_to "Signup", :signup unless logged_in? %>  
+  app/views/users/index.html.erb:16:in `_app_views_users_index_html_erb__1919393160_2176695360_0'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:20:31 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:21:26 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:21:30 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Wed Jan 26 01:21:53 +0800 2011
+  Processing by UsersController#new as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 58ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at Wed Jan 26 01:21:59 +0800 2011
+
+ActionController::RoutingError (No route matches "/index"):
+  
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:24:27 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:25:18 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:26:04 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:27:20 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:27:31 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:30:11 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh'
+Rendered users/index.html.erb within layouts/application (6.4ms)
+Completed   in 16ms
+
+ActionView::Template::Error (translation missing: zh.time.formats.short):
+    26: 
+    27: <body style="background: #EEEEEE;">
+    28: 
+    29: <p><%= l Time.now, :format => :short %></p>
+    30: 
+    31: <%= yield %>
+    32: 
+  app/views/users/index.html.erb:29:in `_app_views_users_index_html_erb__1919393160_2173398000_0'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.9ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:38:18 +0800 2011
+
+SyntaxError (/Ealin/Project/GitHub/PrivateSpace/app/controllers/application_controller.rb:18: unterminated string meets end of file
+/Ealin/Project/GitHub/PrivateSpace/app/controllers/application_controller.rb:18: syntax error, unexpected $end, expecting kEND):
+  app/controllers/users_controller.rb:1
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:39:15 +0800 2011
+
+SyntaxError (/Ealin/Project/GitHub/PrivateSpace/app/controllers/application_controller.rb:36: syntax error, unexpected $end, expecting kEND):
+  app/controllers/users_controller.rb:1
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:40:13 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+Completed   in 2ms
+
+NameError (undefined local variable or method `tw' for #<UsersController:0x10320fe50>):
+  app/controllers/application_controller.rb:15:in `set_locale'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:40:45 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh-tw'
+Rendered users/index.html.erb within layouts/application (17.2ms)
+Completed   in 113ms
+
+ActionView::Template::Error (translation missing: zh-tw.time.formats.short):
+    26: 
+    27: <body style="background: #EEEEEE;">
+    28: 
+    29: <p><%= l Time.now, :format => :short %></p>
+    30: 
+    31: <%= yield %>
+    32: 
+  app/views/users/index.html.erb:29:in `_app_views_users_index_html_erb__1919393160_2172419400_0'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:41:12 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh-tw'
+Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at Wed Jan 26 01:42:36 +0800 2011
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:44:00 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:49:04 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+Completed   in 1ms
+
+NoMethodError (undefined method `length' for :zh_tw:Symbol):
+  app/controllers/application_controller.rb:19:in `set_locale'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:51:26 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+Completed   in 1ms
+
+NoMethodError (undefined method `length' for :zh_tw:Symbol):
+  app/controllers/application_controller.rb:19:in `set_locale'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:52:15 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+Completed   in 1ms
+
+NoMethodError (undefined method `length' for :"zh-tw":Symbol):
+  app/controllers/application_controller.rb:19:in `set_locale'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 01:52:47 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+Completed   in 2ms
+
+NameError (undefined local variable or method `tw' for #<UsersController:0x102f4f648>):
+  app/controllers/application_controller.rb:15:in `set_locale'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/activity.atom" for 127.0.0.1 at Wed Jan 26 02:12:37 +0800 2011
+
+ActionController::RoutingError (No route matches "/activity.atom"):
+  
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 02:14:49 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+Completed   in 1ms
+
+NameError (undefined local variable or method `tw' for #<UsersController:0x103240960>):
+  app/controllers/application_controller.rb:15:in `set_locale'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 02:14:56 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+Completed   in 1ms
+
+NameError (undefined local variable or method `tw' for #<UsersController:0x102fa9dc8>):
+  app/controllers/application_controller.rb:15:in `set_locale'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (86.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (97.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 02:15:07 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+Completed   in 1ms
+
+NameError (undefined local variable or method `tw' for #<UsersController:0x103457cf8>):
+  app/controllers/application_controller.rb:15:in `set_locale'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 02:15:08 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+Completed   in 1ms
+
+NameError (undefined local variable or method `tw' for #<UsersController:0x1030cfdd8>):
+  app/controllers/application_controller.rb:15:in `set_locale'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 02:15:20 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+Completed   in 2ms
+
+NameError (undefined local variable or method `tw' for #<UsersController:0x102f4f120>):
+  app/controllers/application_controller.rb:15:in `set_locale'
+
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /Users/apple/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 02:16:00 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+Rendered users/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 02:17:04 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+Rendered users/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jan 26 02:17:17 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+Rendered users/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
