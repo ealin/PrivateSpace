@@ -10,19 +10,22 @@
 </head>
 
 
-<h1> <%=t :hello %></h1>
+<h1> <%=t :title %></h1>
+
+<h1> <%=t :MyPrivateSpace %></h1>
 
 <h1> My Private Spaces </h1>
 
 
 <div class="user">  
-  <%= link_to "Signup", :signup unless logged_in? %>  
+  <%= link_to (t :signup), :signup unless logged_in? %>  
 </div>  
 
 <div class="user">  
-  <%= link_to "Login", :login unless logged_in? %>  
+  <%= link_to (t :login, :locale => :en), :login unless logged_in? %>  
 </div>  
 
+<p><%= l Time.now, :format => :short %></p>
 
 <body style="background: #EEEEEE;">
 
