@@ -30,10 +30,10 @@ TestPrj::Application.configure do
     :port => 587,  
     :domain => "my-private-space.com",  
     :authentication => :plain,  
-    :user_name => "ealin.chiu@gmail.com",  
-    :password => "uclinux_nana"  
+    :user_name => "privatespace888@gmail.com",  
+    :password => "ealinya1112"  
   }    
-
+	
 
 
   SITE_URL  = "http://localhost:3000"

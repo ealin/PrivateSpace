@@ -1677,3 +1677,192 @@ Started GET "/" for 127.0.0.1 at Wed Jan 26 14:59:43 +0800 2011
 * Locale set to 'zh_tw'
 Rendered users/index.html.erb within layouts/application (5.2ms)
 Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (22.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 29 23:34:27 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+Rendered users/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Sat Jan 29 23:34:41 +0800 2011
+  Processing by UsersController#new as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+Rendered users/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Sat Jan 29 23:34:59 +0800 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+fKFOnnbPdXNyjdkK+4Inp46jkZvj73altzTSCYDPzk=", "utf8"=>"✓", "user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"ealin2", "email"=>"ealin@hey-go.com"}}
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (11.1ms)[0m  SELECT "users"."id" FROM "users" WHERE ("users"."login" = 'ealin2') LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE ("users"."email" = 'ealin@hey-go.com') LIMIT 1[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "users" ("email", "login", "remember_token", "created_at", "activation_code", "activated_at", "name", "remember_token_expires_at", "updated_at", "salt", "crypted_password", "reset_code") VALUES ('ealin@hey-go.com', 'ealin2', NULL, '2011-01-29 15:35:00.000924', '84281821cbec82b6913048c05707cc13529384e0', NULL, '', NULL, '2011-01-29 15:35:00.000924', '10a8039bc714a0de3f41a0ab0ecb9af590fd0489', 'ac816b98c5493bfdbc9b21f0c27ffb3fb930810c', NULL)
+Rendered user_mailer/signup_notification.html.erb (0.5ms)
+
+Sent mail to ealin@hey-go.com (5618ms)
+Date: Sat, 29 Jan 2011 23:35:00 +0800
+From: admin@PrivateSpace
+To: ealin@hey-go.com
+Message-ID: <4d4433a415ed3_24b818e479449011@Appleteki-MacBook-Pro.local.mail>
+Subject: [PrivateSpace] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Your account has been created.
+
+  Username: ealin2
+  Password: ealinya
+
+Visit this url to activate your account:
+
+http://localhost:3000/activate/84281821cbec82b6913048c05707cc13529384e0
+Redirected to http://localhost:3000/
+Completed 302 Found in 5746ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 29 23:35:05 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 12.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [1m[35mAREL (0.9ms)[0m  DELETE FROM "users" WHERE ("users"."id" = 3)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 29 23:46:00 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+Rendered users/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Sat Jan 29 23:46:03 +0800 2011
+  Processing by UsersController#new as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+Rendered users/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Sat Jan 29 23:46:34 +0800 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"+fKFOnnbPdXNyjdkK+4Inp46jkZvj73altzTSCYDPzk=", "utf8"=>"✓", "user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"ealin2", "email"=>"ealin@hey-go.com"}}
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users"."id" FROM "users" WHERE ("users"."login" = 'ealin2') LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE ("users"."email" = 'ealin@hey-go.com') LIMIT 1[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "users" ("created_at", "activation_code", "updated_at", "login", "name", "reset_code", "crypted_password", "activated_at", "remember_token_expires_at", "email", "remember_token", "salt") VALUES ('2011-01-29 15:46:34.639206', '65cc368704ee4c4c0b40bc67eb524858cdad1ecd', '2011-01-29 15:46:34.639206', 'ealin2', '', NULL, 'f153714c9320085262aa907a86ec3471b4ab94af', NULL, NULL, 'ealin@hey-go.com', NULL, 'ae6be0393552c6a79f6d3e9558c7a2036466dc0b')
+Rendered user_mailer/signup_notification.html.erb (0.5ms)
+
+Sent mail to ealin@hey-go.com (5153ms)
+Date: Sat, 29 Jan 2011 23:46:34 +0800
+From: admin@PrivateSpace
+To: ealin@hey-go.com
+Message-ID: <4d44365aab839_282818e515817234@Appleteki-MacBook-Pro.local.mail>
+Subject: [PrivateSpace] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Your account has been created.
+
+  Username: ealin2
+  Password: ealinya
+
+Visit this url to activate your account:
+
+http://localhost:3000/activate/65cc368704ee4c4c0b40bc67eb524858cdad1ecd
+Redirected to http://localhost:3000/
+Completed 302 Found in 5244ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 29 23:46:39 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/activate/65cc368704ee4c4c0b40bc67eb524858cdad1ecd" for 127.0.0.1 at Sat Jan 29 23:47:19 +0800 2011
+  Processing by UsersController#activate as HTML
+  Parameters: {"activation_code"=>"65cc368704ee4c4c0b40bc67eb524858cdad1ecd"}
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."activation_code" = '65cc368704ee4c4c0b40bc67eb524858cdad1ecd') LIMIT 1[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE "users" SET "updated_at" = '2011-01-29 15:47:19.118736', "activated_at" = '2011-01-29 15:47:19.118290', "activation_code" = NULL WHERE ("users"."id" = 4)
+Rendered user_mailer/activation.html.erb (0.5ms)
+
+Sent mail to ealin@hey-go.com (4129ms)
+Date: Sat, 29 Jan 2011 23:47:19 +0800
+From: admin@PrivateSpace
+To: ealin@hey-go.com
+Message-ID: <4d4436873b535_28281bf43e4173c6@Appleteki-MacBook-Pro.local.mail>
+Subject: [PrivateSpace] Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+ealin2, your account has been activated.  Welcome aboard!
+
+http://localhost:3000/login
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4303ms
+
+
+Started GET "/login" for 127.0.0.1 at Sat Jan 29 23:47:23 +0800 2011
+  Processing by SessionsController#new as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+Rendered sessions/new.html.erb within layouts/application (89.5ms)
+Completed 200 OK in 115ms (Views: 113.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/session" for 127.0.0.1 at Sat Jan 29 23:48:17 +0800 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"+fKFOnnbPdXNyjdkK+4Inp46jkZvj73altzTSCYDPzk=", "utf8"=>"✓", "password"=>"[FILTERED]", "login"=>"ealin2"}
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE (login = 'ealin2' and activated_at IS NOT NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Jan 29 23:48:17 +0800 2011
+  Processing by UsersController#index as HTML
+* Accept-Language: zh-tw
+* Locale set to 'zh_tw'
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 4) LIMIT 1
+Rendered users/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.8ms)
