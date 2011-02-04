@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   include Authentication
   include Authentication::ByPassword
   include Authentication::ByCookieToken
+  
 
   set_table_name 'users'
 
@@ -94,6 +95,7 @@ class User < ActiveRecord::Base
   protected
     
   def make_activation_code
+  
       self.activation_code = self.class.make_token
   end
 

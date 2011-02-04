@@ -19,8 +19,11 @@ class ApplicationController < ActionController::Base
 	
 	# rename - zh-tw ==> zh_tw
 	#
-	if I18n.locale == :"zh-tw"
-		I18n.locale = :zh_tw
+	if I18n.locale == :"zh" #-tw" || I18n.locale == :"zh-TW"
+     
+    if env['HTTP_ACCEPT_LANGUAGE'][3] == 84   #  84 == 'T'
+		  I18n.locale = :zh_tw
+    end
 	end
 	
 	#logger.debug I18n.locale.length
@@ -46,8 +49,8 @@ class ApplicationController < ActionController::Base
 	# One source of client supplied information would be an Accept-Language HTTP header. 
 	# People may set this in their browser
     
-	#request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
-	request.env['HTTP_ACCEPT_LANGUAGE']
+	request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+	#request.env['HTTP_ACCEPT_LANGUAGE']
   end   
 	 
 end

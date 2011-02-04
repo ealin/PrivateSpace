@@ -5,10 +5,12 @@ class UsersController < ApplicationController
 
   # render new.rhtml
   def new
+    debugger
     @user = User.new
   end
  
   def create
+    
     logout_keeping_session!
     @user = User.new(params[:user])
     success = @user && @user.save
@@ -79,6 +81,8 @@ end
 
 def index
   #I18n.locale = :en
+
+  #@temp_user = User.find(2) 
 end
 
 end
